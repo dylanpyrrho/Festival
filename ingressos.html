@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingressos — Eclípitica</title>
+<link rel="icon" href="img/hero-eclipse.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="envelope">
+    <a href="index.html" class="marca-eclipse">
+      <img src="img/hero-eclipse.svg" alt="">
+      <span>ECLÍPITICA</span>
+    </a>
+    <button class="gatilho-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="menu-principal" id="menu">
+      <a href="index.html">Início</a>
+      <a href="lineup.html">Line-up</a>
+      <a href="ingressos.html" class="ativo">Ingressos</a>
+      <a href="informacoes.html">Informações</a>
+      <a href="faq.html">Dúvidas</a>
+    </nav>
+  </div>
+</header>
+
+<section class="secao-escura">
+  <div class="envelope">
+    <div class="cabecalho-secao">
+      <span class="kicker">PASSAPORTES PARA OS TRÊS DIAS</span>
+      <h1>Ingressos</h1>
+      <p style="margin-top:16px; color:#cbb89a;">Todos os valores abaixo dão acesso aos três dias de festival: 13, 14 e 15 de novembro.</p>
+    </div>
+
+    <div class="grade-ingressos">
+      <div class="ingresso">
+        <h3>Pista</h3>
+        <p class="preco">R$ 890 <small>/ 3 dias</small></p>
+        <ul>
+          <li>Acesso à arena principal nos três dias</li>
+          <li>Circulação entre Palco Sol e Palco Lua</li>
+          <li>Praça de alimentação e food trucks</li>
+          <li>Guarda-volumes</li>
+          <li>Meia-entrada para quem tem direito</li>
+        </ul>
+        <a href="faq.html" class="botao">Ver condições</a>
+      </div>
+
+      <div class="ingresso destacado">
+        <span class="selo">MAIS VENDIDO</span>
+        <h3>Pista Premium</h3>
+        <p class="preco">R$ 1.450 <small>/ 3 dias</small></p>
+        <ul>
+          <li>Tudo o que a Pista oferece</li>
+          <li>Área elevada, mais próxima dos palcos</li>
+          <li>Bares e banheiros exclusivos</li>
+          <li>Entrada por acesso prioritário</li>
+          <li>Estação de recarga de celular</li>
+        </ul>
+        <a href="faq.html" class="botao solido">Ver condições</a>
+      </div>
+
+      <div class="ingresso">
+        <h3>Camarote Eclipse</h3>
+        <p class="preco">R$ 2.690 <small>/ 3 dias</small></p>
+        <ul>
+          <li>Tudo o que a Pista Premium oferece</li>
+          <li>Vista panorâmica coberta sobre o Palco Sol</li>
+          <li>Open bar nos três dias</li>
+          <li>Área lounge com mesas</li>
+          <li>Estacionamento VIP incluído</li>
+        </ul>
+        <a href="faq.html" class="botao">Ver condições</a>
+      </div>
+    </div>
+
+    <p class="nota-ingressos">Parcelamento em até 10x no cartão. A meia-entrada exige comprovação na entrada. Compre apenas pelo site oficial ou por pontos de venda credenciados.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="envelope">
+    <div class="grade-rodape">
+      <div>
+        <div class="marca-eclipse"><img src="img/hero-eclipse.svg" alt=""><span>ECLÍPITICA</span></div>
+        <p>Três dias em que o rock se alinha. 13, 14 e 15 de novembro de 2026, no Sambódromo do Anhembi, São Paulo.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="lineup.html">Line-up</a></li>
+          <li><a href="ingressos.html">Ingressos</a></li>
+          <li><a href="informacoes.html">Informações</a></li>
+          <li><a href="faq.html">Dúvidas e contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>contato@eclipitica.com.br</li>
+          <li>(11) 4000-0000</li>
+          <li>@eclipitica</li>
+        </ul>
+      </div>
+    </div>
+    <div class="linha-final">
+      <span>Festival Eclípitica © 2026</span>
+      <span>Feito por Isaac Thomaz, Dylan Pyrrho e Beatriz Gomes.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const gatilho = document.querySelector('.gatilho-menu');
+  const menu = document.getElementById('menu');
+  gatilho.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    gatilho.setAttribute('aria-expanded', aberto);
+  });
+</script>
+</body>
+</html>

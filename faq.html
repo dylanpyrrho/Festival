@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dúvidas e contato — Eclípitica</title>
+<link rel="icon" href="img/hero-eclipse.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="envelope">
+    <a href="index.html" class="marca-eclipse">
+      <img src="img/hero-eclipse.svg" alt="">
+      <span>ECLÍPITICA</span>
+    </a>
+    <button class="gatilho-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="menu-principal" id="menu">
+      <a href="index.html">Início</a>
+      <a href="lineup.html">Line-up</a>
+      <a href="ingressos.html">Ingressos</a>
+      <a href="informacoes.html">Informações</a>
+      <a href="faq.html" class="ativo">Dúvidas</a>
+    </nav>
+  </div>
+</header>
+
+<section class="secao-escura">
+  <div class="envelope">
+    <div class="cabecalho-secao">
+      <span class="kicker">PERGUNTAS FREQUENTES</span>
+      <h1>Dúvidas e contato</h1>
+    </div>
+
+    <div class="lista-faq">
+      <details class="pergunta">
+        <summary>Posso comprar ingresso para apenas um dia?</summary>
+        <p class="resposta">Os ingressos do site são passaportes para os três dias. Para passe avulso de um dia, envie sua solicitação pelo formulário de contato desta página.</p>
+      </details>
+      <details class="pergunta">
+        <summary>Menores de idade podem entrar?</summary>
+        <p class="resposta">Menores de 16 anos só entram acompanhados de um responsável legal. Entre 16 e 17 anos, é necessária autorização por escrito e documento com foto.</p>
+      </details>
+      <details class="pergunta">
+        <summary>Existe meia-entrada?</summary>
+        <p class="resposta">Sim, para estudantes, idosos, pessoas com deficiência e demais casos previstos em lei. A comprovação é exigida na entrada.</p>
+      </details>
+      <details class="pergunta">
+        <summary>Posso levar câmera fotográfica?</summary>
+        <p class="resposta">Câmeras compactas e celulares são liberados para uso pessoal. Câmeras profissionais só entram com credenciamento de imprensa.</p>
+      </details>
+      <details class="pergunta">
+        <summary>Tem estacionamento no local?</summary>
+        <p class="resposta">Sim. As vagas ficam no complexo do Sambódromo do Anhembi e podem ser reservadas antecipadamente pelo site. O Camarote Eclipse inclui vaga VIP.</p>
+      </details>
+      <details class="pergunta">
+        <summary>O que acontece se chover?</summary>
+        <p class="resposta">O festival acontece com chuva ou sol. Leve capa de chuva; guarda-chuvas não são permitidos na pista.</p>
+      </details>
+      <details class="pergunta">
+        <summary>Perdi meu ingresso. O que faço?</summary>
+        <p class="resposta">Entre em contato com a nossa central pelo formulário abaixo, informando nome completo e CPF usados na compra.</p>
+      </details>
+    </div>
+
+    <div class="contato">
+      <div>
+        <h2>Fale com a gente</h2>
+        <p style="color:#cbb89a;">Não encontrou sua resposta? Envie sua mensagem e nossa equipe responde em até dois dias úteis.</p>
+      </div>
+      <form onsubmit="return false;">
+        <div class="campo">
+          <label for="nome">NOME</label>
+          <input type="text" id="nome" placeholder="Seu nome completo">
+        </div>
+        <div class="campo">
+          <label for="email">E-MAIL</label>
+          <input type="email" id="email" placeholder="voce@email.com">
+        </div>
+        <div class="campo">
+          <label for="assunto">ASSUNTO</label>
+          <select id="assunto">
+            <option>Ingressos</option>
+            <option>Informações do evento</option>
+            <option>Imprensa e credenciamento</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="mensagem">MENSAGEM</label>
+          <textarea id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="botao solido" style="cursor:pointer; align-self:flex-start;">Enviar mensagem</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="envelope">
+    <div class="grade-rodape">
+      <div>
+        <div class="marca-eclipse"><img src="img/hero-eclipse.svg" alt=""><span>ECLÍPITICA</span></div>
+        <p>Três dias em que o rock se alinha. 13, 14 e 15 de novembro de 2026, no Sambódromo do Anhembi, São Paulo.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="lineup.html">Line-up</a></li>
+          <li><a href="ingressos.html">Ingressos</a></li>
+          <li><a href="informacoes.html">Informações</a></li>
+          <li><a href="faq.html">Dúvidas e contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>contato@eclipitica.com.br</li>
+          <li>(11) 4000-0000</li>
+          <li>@eclipitica</li>
+        </ul>
+      </div>
+    </div>
+    <div class="linha-final">
+      <span>Festival Eclípitica © 2026</span>
+      <span>Feito por [Nome 1] e [Nome 2]</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const gatilho = document.querySelector('.gatilho-menu');
+  const menu = document.getElementById('menu');
+  gatilho.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    gatilho.setAttribute('aria-expanded', aberto);
+  });
+</script>
+</body>
+</html>

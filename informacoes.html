@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informações — Eclípitica</title>
+<link rel="icon" href="img/hero-eclipse.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="envelope">
+    <a href="index.html" class="marca-eclipse">
+      <img src="img/hero-eclipse.svg" alt="">
+      <span>ECLÍPITICA</span>
+    </a>
+    <button class="gatilho-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="menu-principal" id="menu">
+      <a href="index.html">Início</a>
+      <a href="lineup.html">Line-up</a>
+      <a href="ingressos.html">Ingressos</a>
+      <a href="informacoes.html" class="ativo">Informações</a>
+      <a href="faq.html">Dúvidas</a>
+    </nav>
+  </div>
+</header>
+
+<section class="secao-escura">
+  <div class="envelope">
+    <div class="cabecalho-secao">
+      <span class="kicker">ANTES DE VIR</span>
+      <h1>Informações</h1>
+    </div>
+
+    <div class="grade-info">
+      <div class="bloco-endereco">
+        <h3>Endereço</h3>
+        <address>
+          Sambódromo do Anhembi<br>
+          Av. Olavo Fontoura, 1209 — Santana<br>
+          São Paulo — SP
+        </address>
+
+        <h3>Como chegar</h3>
+        <ul class="lista-como-chegar">
+          <li><strong>METRÔ</strong>Linha Azul, estação Portuguesa-Tietê, a poucos minutos a pé do portão principal.</li>
+          <li><strong>ÔNIBUS</strong>Linhas especiais saem da estação Tietê durante os três dias do festival.</li>
+          <li><strong>CARRO / APLICATIVO</strong>Acesso pela Av. Olavo Fontoura, com ponto de embarque e desembarque sinalizado.</li>
+          <li><strong>ESTACIONAMENTO</strong>Vagas no complexo, com reserva antecipada pelo site.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="color:var(--ouro); margin-bottom:14px;">Localização no mapa</h3>
+        <iframe class="mapa-frame" title="Mapa do Sambódromo do Anhembi"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6561%2C-23.5217%2C-46.6361%2C-23.5097&layer=mapnik&marker=-23.5157%2C-46.6461"
+          loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="regras">
+      <div class="cabecalho-secao">
+        <span class="kicker">SEGURANÇA DE TODOS</span>
+        <h2>Regras do festival</h2>
+      </div>
+      <div class="grade-regras">
+        <div>
+          <h3 style="color:var(--ouro); margin-bottom:16px;">Pode levar</h3>
+          <ul class="pode">
+            <li>Garrafa de água vazia, plástica ou de metal</li>
+            <li>Protetor auricular e capa de chuva</li>
+            <li>Celular e câmera compacta para uso pessoal</li>
+            <li>Bandeira sem mastro rígido</li>
+            <li>Documento de identificação com foto</li>
+            <li>Carregador portátil</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color:var(--queimado); margin-bottom:16px;">Não pode levar</h3>
+          <ul class="nao-pode">
+            <li>Recipientes de vidro ou latas</li>
+            <li>Câmeras profissionais sem credenciamento</li>
+            <li>Armas ou objetos perfurocortantes</li>
+            <li>Bebidas ou alimentos de fora do recinto</li>
+            <li>Drones</li>
+            <li>Substâncias ilícitas de qualquer tipo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="envelope">
+    <div class="grade-rodape">
+      <div>
+        <div class="marca-eclipse"><img src="img/hero-eclipse.svg" alt=""><span>ECLÍPITICA</span></div>
+        <p>Três dias em que o rock se alinha. 13, 14 e 15 de novembro de 2026, no Sambódromo do Anhembi, São Paulo.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="lineup.html">Line-up</a></li>
+          <li><a href="ingressos.html">Ingressos</a></li>
+          <li><a href="informacoes.html">Informações</a></li>
+          <li><a href="faq.html">Dúvidas e contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>contato@eclipitica.com.br</li>
+          <li>(11) 4000-0000</li>
+          <li>@eclipitica</li>
+        </ul>
+      </div>
+    </div>
+    <div class="linha-final">
+      <span>Festival Eclípitica © 2026</span>
+      <span>Feito por Isaac Thomaz, Dylan Pyrrho e Beatriz Gomes.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const gatilho = document.querySelector('.gatilho-menu');
+  const menu = document.getElementById('menu');
+  gatilho.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    gatilho.setAttribute('aria-expanded', aberto);
+  });
+</script>
+</body>
+</html>

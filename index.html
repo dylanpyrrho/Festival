@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eclípitica — Festival de Rock | 13 a 15 de novembro, São Paulo</title>
+<link rel="icon" href="img/hero-eclipse.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<header class="topo">
+  <div class="envelope">
+    <a href="index.html" class="marca-eclipse">
+      <img src="img/hero-eclipse.svg" alt="">
+      <span>ECLÍPITICA</span>
+    </a>
+    <button class="gatilho-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="menu-principal" id="menu">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="lineup.html">Line-up</a>
+      <a href="ingressos.html">Ingressos</a>
+      <a href="informacoes.html">Informações</a>
+      <a href="faq.html">Dúvidas</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="envelope">
+    <img class="hero-eclipse" src="img/hero-eclipse.svg" alt="Ilustração de um eclipse solar, símbolo do festival">
+    <span class="kicker">13 · 14 · 15 DE NOVEMBRO DE 2026 — SAMBÓDROMO DO ANHEMBI, SÃO PAULO</span>
+    <h1>Quando o rock<br><em>se alinha</em>.</h1>
+    <p class="subtitulo">Três dias, dois palcos, nove atos que vão do grunge ao hard rock, do punk brasileiro ao rock gaúcho. O Eclípitica é o instante raro em que tudo o que você ouve desde os anos 90 toca no mesmo lugar, ao mesmo tempo.</p>
+    <div class="dados-rapidos">
+      <div><span class="rotulo">DIAS</span><span class="valor">3</span></div>
+      <div><span class="rotulo">PALCOS</span><span class="valor">Sol &amp; Lua</span></div>
+      <div><span class="rotulo">ATRAÇÕES</span><span class="valor">9 bandas</span></div>
+    </div>
+    <div class="hero-ctas">
+      <a href="ingressos.html" class="botao solido">Comprar ingresso</a>
+      <a href="lineup.html" class="botao">Ver line-up completo</a>
+    </div>
+  </div>
+</section>
+
+<div class="arco"></div>
+
+<section class="secao-escura">
+  <div class="envelope">
+    <div class="cabecalho-secao">
+      <span class="kicker">OS TRÊS MOMENTOS DO ECLIPSE</span>
+      <h2>As atrações que fecham cada noite</h2>
+    </div>
+    <div class="grade-destaques">
+      <div class="destaque">
+        <span class="numero">SEXTA · 13/11</span>
+        <h3>Legião Urbana</h3>
+        <p>A noite abre com o rock brasileiro que formou gerações: os hinos que todo mundo canta de cor, ao vivo no Palco Sol.</p>
+      </div>
+      <div class="destaque">
+        <span class="numero">SÁBADO · 14/11</span>
+        <h3>Slipknot</h3>
+        <p>Máscaras, percussão e o peso do metal americano tomam o Palco Sol na noite mais pesada do festival.</p>
+      </div>
+      <div class="destaque">
+        <span class="numero">DOMINGO · 15/11</span>
+        <h3>Foo Fighters</h3>
+        <p>O encerramento é para os veteranos do rock alternativo, com um show longo para fechar o festival em grande estilo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao-vinho">
+  <div class="envelope">
+    <div class="cabecalho-secao" style="margin-bottom:0;">
+      <span class="kicker">POR QUE ECLÍPITICA</span>
+      <h2>Um festival, três gerações de rock</h2>
+      <p style="color:#f0ddc3; margin-top:18px;">Do rock gaúcho ao skate punk paulista, passando pelo grunge de Seattle: nove nomes que raramente dividem o mesmo cartaz dividem o mesmo fim de semana. É esse alinhamento que dá nome ao festival.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="envelope">
+    <div class="grade-rodape">
+      <div>
+        <div class="marca-eclipse"><img src="img/hero-eclipse.svg" alt=""><span>ECLÍPITICA</span></div>
+        <p>Três dias em que o rock se alinha. 13, 14 e 15 de novembro de 2026, no Sambódromo do Anhembi, São Paulo.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="lineup.html">Line-up</a></li>
+          <li><a href="ingressos.html">Ingressos</a></li>
+          <li><a href="informacoes.html">Informações</a></li>
+          <li><a href="faq.html">Dúvidas e contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>contato@eclipitica.com.br</li>
+          <li>(11) 4000-0000</li>
+          <li>@eclipitica</li>
+        </ul>
+      </div>
+    </div>
+    <div class="linha-final">
+      <span>Festival Eclípitica © 2026</span>
+      <span>Feito por Isaac Thomaz, Dylan Pyrrho e Beatriz Gomes.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const gatilho = document.querySelector('.gatilho-menu');
+  const menu = document.getElementById('menu');
+  gatilho.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('aberto');
+    gatilho.setAttribute('aria-expanded', aberto);
+  });
+</script>
 </body>
 </html>
